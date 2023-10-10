@@ -4,4 +4,5 @@ Pizza
 Pasta
 Dose
 Beans and vegetables
+fruits
 Thank you
