@@ -1,0 +1,69 @@
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>My form</title>
+        <style>
+            body {
+                background-image : url('https://i.ytimg.com/vi/jEufa5-jCXk/maxresdefault.jpg');
+                background-size : cover
+            }
+            .form-container {
+                background-color: rgba(255, 255, 255, 0.8);
+                padding: 20px;
+                margin: 100px auto;
+                max-width: 500px;
+                border-radius: 10px;
+            }
+            .form-container input {
+                margin-bottom: 10px;
+            }
+            .form-container label {
+                margin-bottom: 5px;
+                display: block;
+            }
+            .form-container button {
+                width: 50%; 
+                padding: 10px;
+                background-color: #95af4c;
+                border: none;
+                border-radius: 5px;
+                color: white;
+                font-size: 16px;
+                cursor: pointer;
+                margin: 20px auto; 
+                display: block; 
+            }
+
+            .form-container button:hover {
+                background-color: #458ea0;
+            }
+        </style>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var form = document.querySelector('form');
+                form.addEventListener('submit', function(event) {
+                    event.preventDefault(); 
+
+                    var name = document.getElementById('Name').value;
+                    var email = document.getElementById('Email').value;
+
+                    console.log('Name:', name);
+                    console.log('Email:', email);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="form-container">
+            <h1 style="text-align:center;color:blue;">Book a call</h1>
+            <hr>
+            <form>
+                <label for="fav">Name</label>
+                <input type="text" placeholder="Name" id="Name" name="name" style="width: 96%; padding: 8px; border: 1px solid #ccc; border-radius: 5px;" required>
+                <label for="fav">Email</label>
+                <input type="email" placeholder="Email" id="Email" name="Email" style="width: 96%; padding: 8px; border: 1px solid #ccc; border-radius: 5px;" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
