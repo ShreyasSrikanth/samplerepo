@@ -11,6 +11,7 @@ function localStore(e){
     var user = { name: name, email: email };
 
     // Convert the object to a JSON string
+    // localStorage.setItem(name, email);
     var userJSON = JSON.stringify(user);
 
     // Store the JSON string in local storage
