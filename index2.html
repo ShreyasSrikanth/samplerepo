@@ -5,15 +5,21 @@
         </title>
         <style>
             #my-form{
+                display: block;
+                margin: auto;
                 background-color: aliceblue;
                 padding: 2rem;
                 margin:auto;
                 width:60%
             }
             #my-form label{
-                display:block
+                display: block;
+                margin: auto;
+                width:90%;
             }
             #my-form input[type=text]{
+                display: block;
+                margin: auto;
                 width:90%;
                 border-radius: 5px;
                 padding: 5px;
@@ -21,6 +27,8 @@
                 border: 1px solid #0f0d0d;
             }
             #my-form input[type=email]{
+                display: block;
+                margin: auto;
                 width:90%;
                 border-radius: 5px;
                 padding: 5px;
@@ -33,7 +41,8 @@
              }
 
             .btn{
-                margin-left: auto;
+                display: block;
+                margin: auto;
                 width: 60%;
                 padding: 10px;
                 border: 0;
@@ -53,15 +62,14 @@
         </header>
         <form id="my-form">
             <h1 style="text-align: center;">add user</h1>
-            <div>
-                <label for="name">Name</label>
-                <input type="text",id='Name',name='Name'>    
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="email",id='email',name='email'>    
+            <div class="inp" id="inp">
+                <label for="input-label">Name</label>
+                <input type="text" id="Name" name="Name">    
+                <label for="input-label">Email</label>
+                <input type="email" id="email" name="email">  
             </div>
             <input class="btn" type="submit" value="submit">
         </form>
+        <script src="local.js"></script>
     </body>
 </html>
